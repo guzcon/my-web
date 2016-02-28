@@ -1,0 +1,17 @@
+<div class="content animated fadeIn">
+  <div class="tab-wrapper contact-wrapper">
+    <ul class="animated fadeIn">
+      <li><a ui-sref="home"><img src="img/profile-pic.jpg" alt="My pic :)"><span class="first-name">{{contactInfo.firstName}}</span><span class="last-name">{{contactInfo.lastName}}</span></a></li>
+      <li class="animated fadeInLeft"><i class="fa fa-phone"></i>{{contactInfo.phone}}</li>
+      <li class="animated fadeInLeft"><i class="fa fa-envelope"></i>{{contactInfo.email}}</li>
+      <li class="animated fadeInLeft"><i class="fa fa-skype"></i>{{contactInfo.skype}}</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.mainNav>li:last-child').addClass('active');
+    $('.mainNav>li:last-child').siblings().removeClass('active');
+  });
+</script>

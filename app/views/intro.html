@@ -1,0 +1,28 @@
+<div class="container" ng-controller="introCtrl">
+  <div class="row introDiv introBtnDiv"><a class="btn btn-intro" ui-sref="home">See my works</a></div>
+  <div class="row introDiv logoDiv">
+    <img class="logo animated bounce" src="img/logoMe.png" alt="My Logo">
+  </div>
+  <div class="row introDiv tagDiv">
+    <ul class="list-unstyled tagList">
+        <li ng-repeat="tag in tags">
+          {{tag.name}}
+          <div class="tag-content">{{tag.content}}</div>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+      $('.content').css('background', 'transparent');
+      $(document).ready(function(){
+        $(document).on('click', 'ul.tagList>li', function(){
+          $(this).css('max-width', '180px');
+          $(this).addClass('active');
+          $(this).width('auto');
+          $(this).height('auto');
+          $('.tag-content', this).fadeIn();
+          $(this).siblings().children('.tag-content').hide();
+        });
+  });
+</script>

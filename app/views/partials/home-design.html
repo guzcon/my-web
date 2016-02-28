@@ -1,0 +1,37 @@
+<div class="tab-wrapper">
+  <div class="list-div">
+    <ul class="skill-list skill-design">
+      <li>
+        Photoshop
+      </li>
+      <li>
+        Balsamiq
+      </li>
+    </ul>
+    <ul class="rating-list rating-design">
+      <li>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <i class="fa fa-star-o"></i>
+      </li>
+      <li>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="workList">
+    <li class="thumb col-xs-6 col-sm-4" ng-repeat="designWork in designWorks">
+      <a class="btn work-item design">
+        {{designWork.name}}</br>
+        <span class="work-tool">{{designWork.tool}}</span>
+      </a>
+    </li>
+  <ul>
+</div>
