@@ -383,6 +383,49 @@ a, a:hover, a:active, a:focus{
 }
 
 /*work item styling*/
+
+.workList{
+  margin-top: 20px;
+  overflow: hidden;
+}
+.workList li{
+  display: inline-block;
+  padding: 5px;
+  text-align:center;
+}
+
+.workList li a{
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.workList li:first-child{
+  background: #8339E3;
+  border: 1px solid #8339E3;
+}
+
+.workList li:nth-child(2){
+  background: #F98E2B;
+  border: 1px solid #F98E2B;
+}
+.workList li:nth-child(3){
+  background: #FF4B6C;
+  border: 1px solid #FF4B6C;
+}
+.workList li:nth-child(4){
+  background: #EC19C2;
+  border: 1px solid #EC19C2;
+}
+
+.workList li:hover, .workList li:active, .workList li.active{
+  a{
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+/*
 .work-item{
   margin: auto;
   margin-bottom: 30px;
@@ -464,7 +507,7 @@ a, a:hover, a:active, a:focus{
 .workList>li:nth-child(3)>.coding:hover, .workList>li:nth-child(3)>.coding:active{
   background: url('/img/metsatie.jpg');
   background-size: 200px;
-}
+}*/
 /* skill part */
 
 .list-div{

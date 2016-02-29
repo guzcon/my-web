@@ -305,7 +305,42 @@ a, a:hover, a:active, a:focus {
   color: #F52A56; }
 
 /*work item styling*/
-.work-item {
+.workList {
+  margin-top: 20px;
+  overflow: hidden; }
+
+.workList li {
+  display: inline-block;
+  padding: 5px;
+  text-align: center; }
+
+.workList li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 100; }
+
+.workList li:first-child {
+  background: #8339E3;
+  border: 1px solid #8339E3; }
+
+.workList li:nth-child(2) {
+  background: #F98E2B;
+  border: 1px solid #F98E2B; }
+
+.workList li:nth-child(3) {
+  background: #FF4B6C;
+  border: 1px solid #FF4B6C; }
+
+.workList li:nth-child(4) {
+  background: #EC19C2;
+  border: 1px solid #EC19C2; }
+
+.workList li:hover a, .workList li:active a, .workList li.active a {
+  font-weight: 700;
+  cursor: pointer; }
+
+/*
+.work-item{
   margin: auto;
   margin-bottom: 30px;
   width: 200px;
@@ -315,62 +350,78 @@ a, a:hover, a:active, a:focus {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px; }
-  .work-item .work-tool {
+  line-height: 30px;
+
+  .work-tool{
     font-weight: 100;
-    font-size: 16px; }
+    font-size: 16px;
+  }
+}
 
-.work-item.design {
+.work-item.design{
   border-color: #ECAED4;
-  color: #F7119F; }
+  color: $cold-pink;
+}
 
-.work-item.coding {
+.work-item.coding{
   border-color: #F6B0BF;
-  color: #F52A56; }
+  color: $warm-pink;
+}
 
-.work-item:hover {
+.work-item:hover{
   color: #fff;
   font-size: 0px;
-  border-color: #b5b5b5; }
+  border-color: #b5b5b5;
+}
 
-.workList {
-  overflow: hidden;
-  padding: 20px; }
-  .workList li {
-    text-align: center; }
+.workList{
+  overflow:hidden;
+  padding: 20px;
+  li{
+    text-align: center;
+  }
+}
 
-.workList > li:nth-child(1) > .design:hover, .workList > li:nth-child(1) > .design:active {
-  background: url("/img/titi-work.jpg");
-  background-size: 200px; }
+.workList>li:nth-child(1)>.design:hover, .workList>li:nth-child(1)>.design:active{
+  background: url('/img/titi-work.jpg');
+  background-size: 200px;
+}
 
-.work-item.design.active {
+.work-item.design.active{
   color: #fff;
-  background-color: #F360BB; }
+  background-color: $nav-cold;
+}
 
-.work-item.coding.active {
+.work-item.coding.active{
   color: #fff;
-  background-color: #F1695A; }
+  background-color: $nav-warm;
+}
 
-.workList > li:nth-child(2) > .design:hover, .workList > li:nth-child(2) > .design:active {
-  background: url("/img/Uplus-UX.jpg");
-  background-size: 200px; }
+.workList>li:nth-child(2)>.design:hover,.workList>li:nth-child(2)>.design:active{
+  background: url('/img/Uplus-UX.jpg');
+  background-size: 200px;
+}
 
-.workList > li:nth-child(3) > .design:hover, .workList > li:nth-child(3) > .design:active {
-  background: url("/img/fincUX.jpg");
-  background-size: 200px; }
+.workList>li:nth-child(3)>.design:hover, .workList>li:nth-child(3)>.design:active{
+  background: url('/img/fincUX.jpg');
+  background-size: 200px;
+}
 
-.workList > li:nth-child(1) > .coding:hover, .workList > li:nth-child(1) > .coding:active {
-  background: url("/img/uplusUI.jpg");
-  background-size: 200px; }
+.workList>li:nth-child(1)>.coding:hover, .workList>li:nth-child(1)>.coding:active{
+  background: url('/img/uplusUI.jpg');
+  background-size: 200px;
+}
 
-.workList > li:nth-child(2) > .coding:hover, .workList > li:nth-child(2) > .coding:active {
-  background: url("/img/fincUI.jpg");
-  background-size: 200px; }
 
-.workList > li:nth-child(3) > .coding:hover, .workList > li:nth-child(3) > .coding:active {
-  background: url("/img/metsatie.jpg");
-  background-size: 200px; }
+.workList>li:nth-child(2)>.coding:hover, .workList>li:nth-child(2)>.coding:active{
+  background: url('/img/fincUI.jpg');
+  background-size: 200px;
+}
 
+.workList>li:nth-child(3)>.coding:hover, .workList>li:nth-child(3)>.coding:active{
+  background: url('/img/metsatie.jpg');
+  background-size: 200px;
+}*/
 /* skill part */
 .list-div {
   width: 280px;

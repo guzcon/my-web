@@ -69,10 +69,18 @@
 
   <ul class="workList">
     <li class="thumb col-xs-6 col-sm-4" ng-repeat="codingWork in codingWorks">
-      <a class="btn work-item coding">
+      <a class="work-item coding">
         {{codingWork.name}}</br>
-        <span class="work-tool">{{codingWork.tool}}</span>
       </a>
     </li>
-  <ul>
+  </ul>
 </div>
+
+<script>
+$(document).ready(function(){
+  $('.workList').on('click', 'li', function() {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  });
+});
+</script>

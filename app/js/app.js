@@ -1,7 +1,7 @@
 var app = angular.module('myApp', ['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/intro');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
 
