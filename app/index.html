@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Latest compiled and minified BS CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100,100italic,500,500italic' rel='stylesheet' type='text/css'>
@@ -12,11 +12,11 @@
     <link href='css/animate.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Angular and angular UI -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
   </head>
 
   <body ng-app="myApp">
@@ -30,7 +30,7 @@
         </div>
       </nav>
 
-    <div autoscroll="false" ui-view></div>
+    <div ui-view></div>
   </div>
 
     <footer class="footer-div">
@@ -42,7 +42,7 @@
 
     <!-- Controllers -->
     <script src="js/controllers/intro.js"></script>
-
+    <script src="js/controllers/carousel.js"></script>
 
     <!-- directive-->
 

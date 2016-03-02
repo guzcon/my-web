@@ -1,7 +1,12 @@
 <div class="content animated fadeIn">
   <div>
     <div id="about-text" >
-      <p class="animated bounce">Hello! My name is Anh Nguyen and I'm a IT student of TurkuAMK, Finland. Coding and designing are my jobs and hobbies. I'm keen on UI/UX and frontend development, and have participated in different projects to improve my skill set. </br></br> Now I'm living and studying in Turku, but I can be flexible with moving for working purpose.</p>
+      <p class="animated bounce">Hello! My name is Anh Nguyen and I'm a IT student of TurkuAMK, Finland. Coding and
+        designing are my jobs and hobbies. I'm keen on UI/UX and frontend development, and have
+        participated in different projects to improve my skill set. I believe hard work pays off. </br></br>
+        Now I'm living and studying in Turku, but I can be flexible with moving for working purpose.<br/>
+        Pick a category to see my works and skills. 
+      </p>
     </div>
     <div class="btnHomeDiv">
       <a class="btn btn-home btn-design" ui-sref=".design">design</a>
@@ -17,9 +22,7 @@
     $('.mainNav>li:first-child').addClass('active');
     $('.mainNav>li:first-child').siblings().removeClass('active');
     $('.btn-home').click(function(){
-      $('#about-text').hide();
-      $('.btnHomeDiv').width('100%');
-      $('.btn-home').addClass('after-click');
+
       $(this).addClass('active');
       $(this).siblings().removeClass('active');
     });

@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ui.router']);
+var app = angular.module('myApp', ['ui.router','ui.bootstrap']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
@@ -28,15 +28,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
               bigImg: 'img/titi-work.jpg'
             },
             {
-              name: 'Uplus Tutoring',
-              tool: 'Balsamiq',
+              name: 'Artworks',
+              tool: 'Illustrator',
               bigImg: ''
-            },
-            {
-              name: 'Fincoda',
-              tool: 'Balsamiq',
-              bigImg: ''
-            },
+            }
 
           ]
         }
@@ -49,17 +44,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
         controller: function($scope){
           $scope.codingWorks = [
             {
-              name: 'Uplus UI',
+              name: 'Fincoda',
               tool: 'HTML, CSS',
               bigImg: ''
             },
             {
-              name: 'Fincoda UI',
+              name: 'Metsatie',
               tool: 'HTML, CSS, JS',
               bigImg: ''
             },
             {
-              name: 'Metsatie',
+              name: 'Life before Death',
               tool: 'HTML, CSS',
               bigImg: ''
             }

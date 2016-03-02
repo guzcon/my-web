@@ -67,13 +67,97 @@
     </ul>
   </div>
 
-  <ul class="workList">
+  <!--<ul class="workList">
     <li class="thumb col-xs-6 col-sm-4" ng-repeat="codingWork in codingWorks">
       <a class="work-item coding">
         {{codingWork.name}}</br>
       </a>
     </li>
-  </ul>
+  </ul>-->
+
+  <div class="project-wrapper">
+    <h3 class="purple">Fincoda</h3>
+    <div class="col-xs-12 col-md-6">
+      <div class="slide-wrapper">
+        <div ng-controller="carouselCtrl" class="slideshow">
+          <div>
+            <carousel>
+              <slide ng-repeat="fincSlide in fincSlides" active="slide.active">
+                <img ng-src="{{fincSlide.image}}">
+              </slide>
+            </carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <div class="caption">
+        FINCODA project goal is to produced Software Application for Innovation Competencies
+        Assessment for European companies and universities as a tool measure the development
+        of employees and students.<br/><br/>
+
+        In this project I collaborate to design user experience and user interface,
+        as well as implementing the design and structure with HTML/ CSS/ Javascript/ Bootstrap 3.<br/><br/>
+
+        The project is done on Laravel PHP Framework with the use of SASS.
+      </div>
+    </div>
+  </div>
+
+  <div class="project-wrapper">
+    <h3 class="orange">Metsätie</h3>
+    <div class="col-xs-12 col-md-6">
+      <div class="slide-wrapper">
+        <div ng-controller="carouselCtrl" class="slideshow">
+          <div>
+            <carousel>
+              <slide ng-repeat="metsaSlide in metsaSlides" active="slide.active">
+                <img ng-src="{{metsaSlide.image}}">
+              </slide>
+            </carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <div class="caption">
+        My responsibility is to implementing the design provided
+        by the clients by HTML/ CSS. <br/><br/>
+       The website was based on Wordpress.
+
+      </div>
+    </div>
+  </div>
+
+  <div class="project-wrapper">
+    <h3 class="pink">Life before Death</h3>
+    <div class="col-xs-12 col-md-6">
+      <div class="slide-wrapper">
+        <div ng-controller="carouselCtrl" class="slideshow">
+          <div>
+            <carousel>
+              <slide ng-repeat="lifeSlide in lifeSlides" active="slide.active">
+                <img ng-src="{{lifeSlide.image}}">
+              </slide>
+            </carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <div class="caption">
+        Life Before Death is a diary web app that allows deceased users to document their last
+        days in life, as a tool to add the related project research. <br/> <br/>
+        My responsibility is to clean and fix the user interface, make the app responsive, and
+        improve the performance by implementing script instead of routing in needed places.  <br/> <br/>
+        The project back end is developed with Python and Django. I do my job mostly used HTML / CSS / Javascript.
+
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
